@@ -26,10 +26,7 @@ class MainApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 0,
-          ),
+          appBarTheme: AppBarTheme(backgroundColor: Colors.white, elevation: 0),
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: '/',

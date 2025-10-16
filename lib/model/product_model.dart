@@ -1,7 +1,6 @@
 class Product {
   final int? id;
   final String name;
-  final String? description;
   final double price;
   final double? oldPrice;           // For showing discounts
   final String imagePath;           // Product image path
@@ -12,7 +11,6 @@ class Product {
   Product({
     this.id,
     required this.name,
-    this.description,
     required this.price,
     this.oldPrice,
     required this.imagePath,
@@ -26,7 +24,6 @@ class Product {
     return {
       'id': id,
       'name': name,
-      'description': description,
       'price': price,
       'oldPrice': oldPrice,
       'imagePath': imagePath,
@@ -40,7 +37,6 @@ class Product {
     return Product(
       id: map['id'] as int?,
       name: map['name'] as String,
-      description: map['description'] as String?,
       price: (map['price'] as num).toDouble(),
       oldPrice: map['oldPrice'] != null ? (map['oldPrice'] as num).toDouble() : null,
       imagePath: map['imagePath'] as String,
@@ -64,7 +60,6 @@ class Product {
     return Product(
       id: id ?? this.id,
       name: name ?? this.name,
-      description: description ?? this.description,
       price: price ?? this.price,
       oldPrice: oldPrice ?? this.oldPrice,
       imagePath: imagePath ?? this.imagePath,

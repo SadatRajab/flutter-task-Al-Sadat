@@ -46,7 +46,6 @@ class PlanCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  /// العنوان + السعر + الشيك بوكس
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -72,12 +71,12 @@ class PlanCard extends StatelessWidget {
                       Text(
                         "${price.toStringAsFixed(0)} ج.م",
                         style: const TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.deepOrange,
                           fontFamily: 'Tajawal',
                           decoration: TextDecoration.underline,
-                          decorationThickness: 2,
+                          decorationThickness: 3,
                           decorationColor: Colors.deepOrange,
                         ),
                       ),
@@ -87,7 +86,6 @@ class PlanCard extends StatelessWidget {
                   const SizedBox(height: 8),
                   const Divider(),
 
-                  /// المميزات
                   ...features.map(
                     (f) => Padding(
                       padding: const EdgeInsets.symmetric(vertical: 6.0),

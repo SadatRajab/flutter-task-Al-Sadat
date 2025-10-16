@@ -15,7 +15,7 @@ class ProfilVeiw extends StatelessWidget {
           'أختر الباقات اللى تناسبك',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 20,
             fontFamily: 'Tajawal-bold',
           ),
         ),
